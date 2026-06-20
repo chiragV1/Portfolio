@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chirag Verma — Portfolio Website
 
-## Getting Started
+A premium, animated portfolio website built with **Next.js 15**, **Tailwind CSS 4**, **Framer Motion**, **MongoDB Atlas**, and **Nodemailer**.
 
-First, run the development server:
+---
+
+## Local Setup
 
 ```bash
+npm install
+cp .env.example .env.local
+# Fill in all values in .env.local
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Open http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## MongoDB Atlas (Free Tier)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Go to cloud.mongodb.com → Create a free **M0 cluster**
+2. Create a database user under **Security > Database Access**
+3. Whitelist your IP (use `0.0.0.0/0` for Vercel)
+4. Click **Connect > Drivers** → copy the connection string
+5. Paste as `MONGODB_URI` in `.env.local`
 
-## Learn More
+Collections (`leads`, `pageviews`) are created automatically on first use.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Gmail App Password
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Go to myaccount.google.com/apppasswords
+2. Select **Mail** → **Other** → name it "Portfolio"
+3. Copy the 16-character password
+4. Set `GMAIL_USER` + `GMAIL_APP_PASSWORD` in env
 
-## Deploy on Vercel
+> 2FA must be enabled on your Google account.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Vercel Deployment
+
+```bash
+npm i -g vercel
+vercel
+```
+
+Add all env vars from `.env.example` in **Vercel Dashboard > Settings > Environment Variables**, then redeploy.
+
+---
+
+## Google Analytics 4
+
+1. analytics.google.com → Create GA4 property
+2. Copy **Measurement ID** (e.g. `G-XXXXXXXXXX`)
+3. Set `NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX`
+
+---
+
+## Microsoft Clarity
+
+1. clarity.microsoft.com → Create project
+2. Copy **Project ID**
+3. Set `NEXT_PUBLIC_CLARITY_ID=your-id`
+
+---
+
+## Admin Panel
+
+Visit `/admin/login` — password is `ADMIN_PASSWORD` env var.
+
+- View all leads with full details
+- Toggle status: New → Contacted → Closed
+- See top pages and analytics links
+
+---
+
+## Tech Stack
+
+| Layer | Tech |
+|---|---|
+| Framework | Next.js 15 (App Router) |
+| Styling | Tailwind CSS 4 |
+| Animation | Framer Motion |
+| Database | MongoDB Atlas + Mongoose |
+| Email | Nodemailer (Gmail SMTP) |
+| Deployment | Vercel (free tier) |
