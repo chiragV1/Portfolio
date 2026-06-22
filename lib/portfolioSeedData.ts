@@ -4,7 +4,7 @@ export const seedData = {
   profile: {
     name: "Chirag Verma",
     tagline: "Full Stack Developer & Automation Engineer",
-    bio: "Dynamic Full-Stack Web Developer with a proven track record of building scalable, responsive, and user-focused applications. Experienced in developing end-to-end solutions using JavaScript, React.js, Node.js, MongoDB, and TypeScript, along with strong fundamentals in HTML, CSS, and modern UI frameworks like Tailwind CSS. Proficient in API development, database design, and third-party integrations. Previously worked with Java, Spring Boot, and SQL, bringing a versatile tech background. Passionate about crafting clean, maintainable code and delivering impactful digital experiences.",
+    bio: "Full Stack Developer and Automation Engineer with 3+ years of experience building scalable web applications and intelligent automation systems. Currently at Aptli AI, engineering large-scale hotel revenue reconciliation and payment automation for platforms like Expedia, Booking.com, and Oracle Opera Cloud using Python, Playwright, Node.js, and React. Previously at Oracle Financial Services building enterprise-grade RESTful APIs with Java and Spring Boot. Proficient across the full stack — from React and Next.js frontends to Node.js backends, MongoDB and PostgreSQL databases, and AWS cloud infrastructure. Passionate about building systems that eliminate manual work and deliver real operational impact.",
     location: "Agra, U.P., India",
     email: "chiragverma525@gmail.com",
     phone: "+91 73517 40611",
@@ -12,22 +12,22 @@ export const seedData = {
     linkedin: "https://www.linkedin.com/in/chiragverma1703/",
     twitter: "https://twitter.com/chiragverma",
     stats: {
-      yearsExperience: "2+",
-      projectsCompleted: "15+",
-      happyClients: "5+",
-      toolsBuilt: "3+",
+      yearsExperience: "3+",
+      projectsCompleted: "20+",
+      happyClients: "8+",
+      toolsBuilt: "5+",
     },
   },
 
   experience: [
     {
       period: "Aug 2025 – Present",
-      role: "Freelance Automation Developer",
+      role: "Full Stack Developer & Automation Engineer",
       company: "Aptli AI",
       location: "Remote",
       description:
-        "Building an intelligent hotel reconciliation system using Python automation. Developed automated pipelines that fetch live booking, billing, and inventory data from hotel management systems. Engineered workflow automation that performs end-to-end reconciliation actions — flagging discrepancies, generating audit reports, and triggering corrective workflows automatically — eliminating hours of manual back-office work for hotel operators.",
-      tags: ["Python", "Playwright", "Automation", "REST APIs", "Data Pipelines", "Hotel Tech"],
+        "Built large-scale hotel revenue reconciliation and payment automation systems for major OTA and PMS platforms including Expedia, Booking.com, Choice Hotels, SynXis, HotelKey, and Oracle Opera Cloud. Developed Python/Playwright automation frameworks handling complex browser workflows — invoice reconciliation, virtual card processing, payment posting, dispute handling, and AR management — reducing manual operational effort significantly. Designed scalable backend services with Node.js, TypeScript, and REST APIs; built reconciliation dashboards and reporting interfaces using React, Next.js, and Redux Toolkit. Managed MongoDB and PostgreSQL schemas, aggregation pipelines, and reporting models; leveraged AWS S3 and EC2 for automation execution, logging, and cloud storage.",
+      tags: ["Python", "Playwright", "Node.js", "TypeScript", "React", "Next.js", "MongoDB", "PostgreSQL", "AWS", "REST APIs", "Redux Toolkit", "Tailwind CSS"],
       current: true,
     },
     {
@@ -55,7 +55,7 @@ export const seedData = {
   education: [
     {
       period: "Jul 2019 – Jun 2023",
-      degree: "B.E. — Instrumentation & Control Engineering",
+      degree: "B.Tech — Instrumentation & Control Engineering",
       institution: "National Institute of Technology Trichy",
       score: "7.24 CGPA",
       description:
@@ -107,9 +107,9 @@ export const seedData = {
       icon: "🗄️",
       skills: [
         { name: "MongoDB", level: 87, color: "#47A248" },
-        { name: "MySQL / SQL", level: 80, color: "#336791" },
+        { name: "PostgreSQL / SQL", level: 82, color: "#336791" },
+        { name: "AWS (S3, EC2)", level: 78, color: "#FF9900" },
         { name: "Vercel / Render", level: 85, color: "#06B6D4" },
-        { name: "Firebase", level: 72, color: "#FFCA28" },
       ],
     },
   ],

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chirag Verma — Resume</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 10.5pt;
+      color: #1a1a1a;
+      background: #fff;
+      line-height: 1.45;
+    }
+
+    .page {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 36px 44px;
+    }
+
+    /* ── HEADER ── */
+    .header { margin-bottom: 18px; }
+    .header h1 {
+      font-size: 26pt;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #111;
+      margin-bottom: 2px;
+    }
+    .header .title {
+      font-size: 11pt;
+      color: #5b21b6;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 16px;
+      font-size: 9.5pt;
+      color: #444;
+    }
+    .contact-row a { color: #5b21b6; text-decoration: none; }
+
+    /* ── DIVIDER ── */
+    hr { border: none; border-top: 1.5px solid #e0d4f7; margin: 14px 0; }
+    .section-title {
+      font-size: 10pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #5b21b6;
+      margin-bottom: 10px;
+    }
+
+    /* ── PROFILE ── */
+    .profile p { color: #333; font-size: 10pt; line-height: 1.55; }
+
+    /* ── EXPERIENCE / EDUCATION ── */
+    .entry { margin-bottom: 14px; }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
+    .entry-header .role {
+      font-weight: 700;
+      font-size: 10.5pt;
+      color: #111;
+    }
+    .entry-header .period {
+      font-size: 9.5pt;
+      color: #666;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .entry .company {
+      font-size: 9.5pt;
+      color: #5b21b6;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .entry ul {
+      padding-left: 16px;
+      margin-top: 4px;
+    }
+    .entry ul li {
+      font-size: 9.8pt;
+      color: #333;
+      margin-bottom: 3px;
+      line-height: 1.5;
+    }
+    .entry .tags {
+      margin-top: 6px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .entry .tags span {
+      font-size: 8.5pt;
+      background: #f3eeff;
+      color: #5b21b6;
+      border-radius: 3px;
+      padding: 1px 7px;
+      font-weight: 500;
+    }
+
+    /* ── EDUCATION ── */
+    .edu-entry { margin-bottom: 10px; }
+    .edu-entry .degree { font-weight: 700; font-size: 10.5pt; color: #111; }
+    .edu-entry .institution { font-size: 9.5pt; color: #5b21b6; font-weight: 600; }
+    .edu-entry .edu-meta {
+      font-size: 9.5pt;
+      color: #555;
+      margin-top: 2px;
+    }
+
+    /* ── SKILLS ── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 24px;
+    }
+    .skill-group .group-name {
+      font-weight: 700;
+      font-size: 9.5pt;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #333;
+      margin-bottom: 4px;
+    }
+    .skill-group .skill-list {
+      font-size: 9.5pt;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    /* ── EXTRA ── */
+    .extra p { font-size: 9.8pt; color: #333; line-height: 1.55; }
+
+    /* ── PRINT ── */
+    @media print {
+      body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .page { padding: 28px 36px; }
+      .no-print { display: none; }
+    }
+
+    /* ── PRINT BUTTON ── */
+    .print-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #5b21b6;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(91,33,182,0.35);
+      z-index: 999;
+    }
+    .print-btn:hover { background: #4c1d95; }
+  </style>
+</head>
+<body>
+
+  <button class="print-btn no-print" onclick="window.print()">⬇ Save as PDF</button>
+
+  <div class="page">
+
+    <!-- HEADER -->
+    <div class="header">
+      <h1>CHIRAG VERMA</h1>
+      <div class="title">Full Stack Developer &amp; Automation Engineer</div>
+      <div class="contact-row">
+        <span>Agra, U.P., India</span>
+        <span>+91 73517 40611</span>
+        <a href="mailto:chiragverma525@gmail.com">chiragverma525@gmail.com</a>
+        <a href="https://www.linkedin.com/in/chiragverma1703/" target="_blank">linkedin.com/in/chiragverma1703</a>
+        <a href="https://github.com/chiragV1" target="_blank">github.com/chiragV1</a>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- PROFILE -->
+    <div class="section-title">Profile</div>
+    <div class="profile">
+      <p>
+        Full Stack Developer and Automation Engineer with 3+ years of experience building scalable web applications and intelligent
+        automation systems. Currently at Aptli AI, engineering large-scale hotel revenue reconciliation and payment automation for
+        platforms like Expedia, Booking.com, and Oracle Opera Cloud using Python, Playwright, Node.js, and React. Previously at Oracle
+        Financial Services building enterprise-grade RESTful APIs with Java and Spring Boot. Proficient across the full stack — from
+        React and Next.js frontends to Node.js backends, MongoDB and PostgreSQL databases, and AWS cloud infrastructure. Passionate
+        about building systems that eliminate manual work and deliver real operational impact.
+      </p>
+    </div>
+
+    <hr />
+
+    <!-- SKILLS SUMMARY -->
+    <div class="section-title">Skills</div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <div class="group-name">Frontend</div>
+        <div class="skill-list">React.js, Next.js, TypeScript, Redux Toolkit, Tailwind CSS, HTML5, CSS3</div>
+      </div>
+      <div class="skill-group">
+        <div class="group-name">Backend</div>
+        <div class="skill-list">Node.js, Express.js, Java, Spring Boot, REST APIs, Spring Security</div>
+      </div>
+      <div class="skill-group">
+        <div class="group-name">Automation</div>
+        <div class="skill-list">Python, Playwright, Browser Automation, Data Pipelines, Workflow Automation</div>
+      </div>
+      <div class="skill-group">
+        <div class="group-name">Databases &amp; Cloud</div>
+        <div class="skill-list">MongoDB, PostgreSQL, MySQL, AWS (S3, EC2), Vercel, Render, Firebase</div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- EXPERIENCE -->
+    <div class="section-title">Experience</div>
+
+    <!-- Aptli AI -->
+    <div class="entry">
+      <div class="entry-header">
+        <span class="role">Full Stack Developer &amp; Automation Engineer</span>
+        <span class="period">Aug 2025 – Present</span>
+      </div>
+      <div class="company">Aptli AI &nbsp;·&nbsp; Remote</div>
+      <ul>
+        <li>Built large-scale hotel revenue reconciliation and payment automation systems for major OTA and PMS platforms including Expedia, Booking.com, Choice Hotels, SynXis, HotelKey, and Oracle Opera Cloud.</li>
+        <li>Developed Python/Playwright automation frameworks handling complex browser workflows — invoice reconciliation, virtual card processing, payment posting, dispute handling, and AR management — significantly reducing manual operational effort.</li>
+        <li>Designed and implemented scalable backend services using Node.js, TypeScript, and REST APIs to support reconciliation workflows, analytics, and operational automation.</li>
+        <li>Built reconciliation dashboards and reporting interfaces using React, Next.js, Redux Toolkit, and Tailwind CSS for tracking revenue leakage, payment status, disputes, and operational KPIs.</li>
+        <li>Designed and optimized MongoDB and PostgreSQL schemas, aggregation pipelines, and reconciliation data models for handling thousands of reservation, invoice, and payment records.</li>
+        <li>Implemented robust error handling, retry mechanisms, logging, and audit trails for mission-critical financial automation processes.</li>
+        <li>Leveraged AWS S3 and EC2 for automation execution, logging, and cloud storage; collaborated across product, operations, and engineering teams to improve reconciliation accuracy.</li>
+      </ul>
+      <div class="tags">
+        <span>Python</span><span>Playwright</span><span>Node.js</span><span>TypeScript</span><span>React</span>
+        <span>Next.js</span><span>MongoDB</span><span>PostgreSQL</span><span>AWS</span><span>REST APIs</span>
+        <span>Redux Toolkit</span><span>Tailwind CSS</span>
+      </div>
+    </div>
+
+    <!-- Freelance -->
+    <div class="entry">
+      <div class="entry-header">
+        <span class="role">Freelance Software Developer</span>
+        <span class="period">Sep 2024 – Present</span>
+      </div>
+      <div class="company">Remote / Independent</div>
+      <ul>
+        <li>Built modern, responsive web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js) for clients across various domains.</li>
+        <li>Designed clean, user-friendly interfaces with React.js, TypeScript, and Tailwind CSS ensuring smooth and engaging user experiences.</li>
+        <li>Developed secure and efficient backend APIs with Node.js and Express, implementing authentication, role-based access, and data handling.</li>
+        <li>Handled end-to-end project development — from planning and design to deployment and client handover on Vercel, Render, and Netlify.</li>
+        <li>Communicated directly with clients to understand requirements and deliver customized, scalable solutions on time.</li>
+      </ul>
+      <div class="tags">
+        <span>MERN</span><span>React.js</span><span>TypeScript</span><span>Node.js</span>
+        <span>MongoDB</span><span>Tailwind CSS</span><span>Vercel</span>
+      </div>
+    </div>
+
+    <!-- Oracle -->
+    <div class="entry">
+      <div class="entry-header">
+        <span class="role">Associate Application Developer</span>
+        <span class="period">Jun 2023 – Aug 2024</span>
+      </div>
+      <div class="company">Oracle Financial Services Software &nbsp;·&nbsp; Bangalore</div>
+      <ul>
+        <li>Designed and developed scalable RESTful APIs using Spring Boot and Java; implemented data validation, error handling, rate limiting, and caching mechanisms.</li>
+        <li>Leveraged Spring Security for authentication and authorization; used Spring Boot Actuator for monitoring and troubleshooting.</li>
+        <li>Built responsive front-end components with React/Angular integrated via AJAX; implemented client-side validation and error handling.</li>
+        <li>Designed relational database schemas using SQL with Spring Data JPA; optimized queries for performance and scalability.</li>
+        <li>Participated actively in code reviews and cross-functional team delivery with product managers and designers.</li>
+      </ul>
+      <div class="tags">
+        <span>Java</span><span>Spring Boot</span><span>Spring Security</span>
+        <span>REST APIs</span><span>SQL</span><span>React</span><span>JavaScript</span>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- EDUCATION -->
+    <div class="section-title">Education</div>
+
+    <div class="edu-entry">
+      <div class="entry-header">
+        <span class="degree">B.Tech — Instrumentation &amp; Control Engineering</span>
+        <span class="period">Jul 2019 – Jun 2023</span>
+      </div>
+      <div class="institution">National Institute of Technology Trichy (NIT Trichy)</div>
+      <div class="edu-meta">CGPA: 7.24 &nbsp;·&nbsp; Science and Engineering</div>
+    </div>
+
+    <div class="edu-entry">
+      <div class="entry-header">
+        <span class="degree">Higher Secondary School (Science Stream)</span>
+        <span class="period">Apr 2015 – Mar 2017</span>
+      </div>
+      <div class="institution">Delhi Public School, Agra</div>
+      <div class="edu-meta">Percentage: 87.2% &nbsp;·&nbsp; Mathematics, Physics, Chemistry</div>
+    </div>
+
+    <hr />
+
+    <!-- EXTRA CURRICULAR -->
+    <div class="section-title">Extra-Curricular</div>
+    <div class="extra">
+      <p>
+        Handled end-to-end social media management for personal and small business accounts — including content creation,
+        post-scheduling, copywriting, and engagement strategies to boost reach and visibility.
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
