@@ -5,8 +5,7 @@ import { motion, useInView } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { GithubIcon } from "@/components/ui/SocialIcons";
 
-// TODO: Replace with your actual Vercel deployment URL
-const PORTFOLIO_LIVE_URL = "https://YOUR_VERCEL_URL.vercel.app";
+const PORTFOLIO_LIVE_URL = "https://portfolio-phi-taupe-hcyxba7zv4.vercel.app";
 
 const projects = [
   {
