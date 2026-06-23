@@ -5,66 +5,57 @@ import { motion, useInView } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { GithubIcon } from "@/components/ui/SocialIcons";
 
+// TODO: Replace with your actual Vercel deployment URL
+const PORTFOLIO_LIVE_URL = "https://YOUR_VERCEL_URL.vercel.app";
+
 const projects = [
   {
     id: 1,
-    title: "AutoScraper Pro",
+    title: "Developer Portfolio",
     description:
-      "Production-grade web scraping tool with dynamic content handling, CAPTCHA bypass strategies, and structured data export to CSV/JSON/MongoDB. Handles JavaScript-heavy sites with ease.",
-    tags: ["Python", "Playwright", "MongoDB", "FastAPI"],
-    category: "automation",
+      "This portfolio — a full-stack Next.js 15 site with Framer Motion animations, MongoDB backend for lead management, an admin dashboard, and dynamic CV data served from MongoDB Atlas.",
+    tags: ["Next.js 15", "TypeScript", "MongoDB", "Tailwind CSS", "Framer Motion"],
+    category: "web",
     gradient: "from-purple-600 to-cyan-500",
-    github: "https://github.com/chiragV1",
+    github: "https://github.com/chiragV1/Portfolio",
+    demo: PORTFOLIO_LIVE_URL,
+    icon: "🌐",
+  },
+  {
+    id: 2,
+    title: "E-Commerce App",
+    description:
+      "Full-stack e-commerce application with a React frontend and Node.js/Express backend. Features product listings, cart management, user authentication, and order handling backed by MongoDB.",
+    tags: ["MERN", "TypeScript", "React", "Node.js", "MongoDB"],
+    category: "web",
+    gradient: "from-pink-600 to-purple-600",
+    github: "https://github.com/chiragV1/ecommerce",
+    demo: null,
+    icon: "🛍️",
+  },
+  {
+    id: 3,
+    title: "Automation App",
+    description:
+      "Python automation software that navigates a pre-defined user flow to automatically download PDFs and CSVs from web applications — eliminating repetitive manual data extraction.",
+    tags: ["Python", "Playwright", "Automation", "PDF", "CSV"],
+    category: "automation",
+    gradient: "from-green-600 to-cyan-600",
+    github: "https://github.com/chiragV1/Automation_App",
     demo: null,
     icon: "🤖",
   },
   {
-    id: 2,
-    title: "DevLink API",
+    id: 4,
+    title: "Google Business Profile API",
     description:
-      "Robust REST API with JWT authentication, rate limiting, role-based access control, and automated Swagger docs. Production-ready with full test coverage.",
-    tags: ["Node.js", "Express", "JWT", "PostgreSQL"],
+      "Python integration that uses the Google Business Profile API to programmatically reply to customer reviews on Google Places — automating reputation management workflows.",
+    tags: ["Python", "Google API", "REST APIs", "Automation"],
     category: "apis",
     gradient: "from-blue-600 to-purple-600",
-    github: "https://github.com/chiragV1",
+    github: "https://github.com/chiragV1/Google-Business-Profile-API",
     demo: null,
-    icon: "🔗",
-  },
-  {
-    id: 3,
-    title: "ShopFlow",
-    description:
-      "Modern e-commerce frontend with server-side rendering, optimistic UI updates, cart management, and Stripe payment integration. Built for sub-100ms page loads.",
-    tags: ["Next.js", "TypeScript", "Tailwind", "Stripe"],
-    category: "web",
-    gradient: "from-pink-600 to-purple-600",
-    github: "https://github.com/chiragV1",
-    demo: "https://shopflow.vercel.app",
-    icon: "🛍️",
-  },
-  {
-    id: 4,
-    title: "TestPilot",
-    description:
-      "Comprehensive Playwright automation framework with Page Object Model, parallel test execution, CI/CD integration, and HTML reporting. Used in 3 production projects.",
-    tags: ["Playwright", "TypeScript", "CI/CD", "GitHub Actions"],
-    category: "automation",
-    gradient: "from-green-600 to-cyan-600",
-    github: "https://github.com/chiragV1",
-    demo: null,
-    icon: "🧪",
-  },
-  {
-    id: 5,
-    title: "LeadTrack",
-    description:
-      "Full-stack CRM dashboard for tracking sales leads with real-time status updates, analytics charts, email notifications, and CSV export. Manages 1000+ leads.",
-    tags: ["Next.js", "MongoDB", "Mongoose", "Chart.js"],
-    category: "web",
-    gradient: "from-orange-600 to-pink-600",
-    github: "https://github.com/chiragV1",
-    demo: null,
-    icon: "📊",
+    icon: "🔍",
   },
 ];
 
